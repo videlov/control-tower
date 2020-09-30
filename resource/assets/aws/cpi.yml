@@ -26,6 +26,7 @@
   path: /disk_pools/name=disks/cloud_properties?
   value:
     type: gp2
+    encrypted: true
 
 - type: replace
   path: /networks/name=default/subnets/0/cloud_properties?
@@ -79,6 +80,7 @@
     default_key_name: ((default_key_name))
     default_security_groups: ((default_security_groups))
     region: ((region))
+    encrypted: true
 
 - type: replace
   path: /cloud_provider/ssh_tunnel?
